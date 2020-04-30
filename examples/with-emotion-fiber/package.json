@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "Thomas Greco",
@@ -15,6 +17,8 @@
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-emotion": "^8.0.11"
-  }
+    "react-emotion": "^8.0.11",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
