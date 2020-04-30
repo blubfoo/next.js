@@ -7,14 +7,18 @@
     "start": "next start",
     "analyze": "BUNDLE_ANALYZE=both next build",
     "analyze:server": "BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "BUNDLE_ANALYZE=browser next build"
+    "analyze:browser": "BUNDLE_ANALYZE=browser next build",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@zeit/next-bundle-analyzer": "^0.1.2",
     "faker": "^4.1.0",
     "next": "latest",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "snyk": "^1.316.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
