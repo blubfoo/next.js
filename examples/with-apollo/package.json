@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@apollo/react-hooks": "3.0.0",
@@ -18,7 +20,9 @@
     "next": "latest",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "snyk": "^1.316.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
