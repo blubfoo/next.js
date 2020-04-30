@@ -6,14 +6,18 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "style-sheet": "^3.0.1"
+    "style-sheet": "^3.0.1",
+    "snyk": "^1.316.1"
   },
   "author": "Giuseppe Gurgone",
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
