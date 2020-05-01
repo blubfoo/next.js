@@ -4,18 +4,22 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@kiwicom/orbit-components": "latest",
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "styled-components": "^4.0.0"
+    "styled-components": "^4.0.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@kiwicom/babel-plugin-orbit-components": "latest",
     "babel-plugin-styled-components": "^1.8.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
