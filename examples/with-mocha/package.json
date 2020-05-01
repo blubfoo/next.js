@@ -5,12 +5,15 @@
     "test": "NODE_ENV=test mocha",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
@@ -19,5 +22,6 @@
     "enzyme-adapter-react-16": "^1.5.0",
     "expect.js": "^0.3.1",
     "mocha": "^5.2.0"
-  }
+  },
+  "snyk": true
 }
