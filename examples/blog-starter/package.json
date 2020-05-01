@@ -4,7 +4,9 @@
     "dev": "next",
     "build": "next build",
     "build:rss": "node ./.next/serverless/posts/rss-feed.js",
-    "now-build": "next build && yarn build:rss"
+    "now-build": "next build && yarn build:rss",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -21,11 +23,13 @@
     "pagination": "^0.4.6",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@svgr/webpack": "^4.2.0",
     "prettier": "^1.16.4",
     "rehype": "^8.0.0"
-  }
+  },
+  "snyk": true
 }
