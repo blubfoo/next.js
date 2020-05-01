@@ -7,14 +7,18 @@
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-esi": "^0.1"
+    "react-esi": "^0.1",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "build": "babel src -d dist && next build dist",
-    "start": "NODE_ENV=production node dist/server.js"
+    "start": "NODE_ENV=production node dist/server.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/node": "^7.2.2"
-  }
+  },
+  "snyk": true
 }
