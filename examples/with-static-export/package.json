@@ -7,7 +7,8 @@
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "serve": "9.4.0"
+    "serve": "9.4.0",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "dev": "node .",
@@ -15,6 +16,9 @@
     "preexport": "npm run build",
     "export": "next export",
     "prestart": "npm run export",
-    "start": "serve out"
-  }
+    "start": "serve out",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
