@@ -8,7 +8,9 @@
     "next-build": "next build",
     "dev": "bsb -make-world && node server/server.bs.js",
     "next:build": "bsb -make-world && next build",
-    "start": "NODE_ENV=production node server/server.bs.js"
+    "start": "NODE_ENV=production node server/server.bs.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "BuckleScript"
@@ -21,6 +23,8 @@
   "dependencies": {
     "next": "latest",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+    "react-dom": "^16.8.6",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
