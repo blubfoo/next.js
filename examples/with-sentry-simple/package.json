@@ -5,16 +5,20 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@sentry/browser": "^5.1.0",
     "@sentry/node": "^5.6.2",
     "next": "latest",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@zeit/next-source-maps": "0.0.4-canary.1"
-  }
+  },
+  "snyk": true
 }
