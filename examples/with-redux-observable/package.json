@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "tomaszmularczyk(tomasz.mularczyk89@gmail.com)",
   "dependencies": {
@@ -17,7 +19,9 @@
     "redux-logger": "^3.0.6",
     "redux-observable": "^1.0.0",
     "rxjs": "^6.3.3",
-    "universal-rxjs-ajax": "^2.0.0"
+    "universal-rxjs-ajax": "^2.0.0",
+    "snyk": "^1.316.1"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
