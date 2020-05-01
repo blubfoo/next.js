@@ -4,14 +4,17 @@
   "scripts": {
     "dev": "next",
     "now-build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.84.0"
+    "semantic-ui-react": "^0.84.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@zeit/next-css": "^1.0.1",
@@ -19,5 +22,6 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.29.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
