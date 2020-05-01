@@ -18,14 +18,17 @@
     "typecheck-app": "tsc --project src/app",
     "lint-functions": "tslint --project src/functions",
     "copy-deps": "cpx \"*{package.json,package-lock.json,yarn.lock}\" \"dist/functions\" -C",
-    "install-deps": "cd \"dist/functions\" && npm i"
+    "install-deps": "cd \"dist/functions\" && npm i",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "firebase-admin": "^8.0.0",
     "firebase-functions": "^3.1.0",
     "next": "latest",
     "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "react-dom": "16.8.6",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/node": "12.0.12",
@@ -38,5 +41,6 @@
     "tslint": "^5.11.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.2.0"
-  }
+  },
+  "snyk": true
 }
