@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next -p 1234",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,8 @@
     "overmind": "^17.0.0-1551262265873",
     "overmind-react": "^18.0.0-1551262265873",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
-  }
+    "react-dom": "^16.8.3",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
