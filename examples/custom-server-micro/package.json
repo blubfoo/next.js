@@ -3,17 +3,21 @@
   "scripts": {
     "dev": "micro-dev --watch server.js",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production micro"
+    "start": "cross-env NODE_ENV=production micro",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "micro": "^9.3.3",
     "micro-route": "^2.5.0",
     "next": "latest",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
     "micro-dev": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
