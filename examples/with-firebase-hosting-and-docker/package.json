@@ -21,7 +21,9 @@
     "docker:down": "docker-compose down -v",
     "docker:sh": "docker-compose exec server sh",
     "logs": "firebase functions:log",
-    "shell": "firebase functions:shell"
+    "shell": "firebase functions:shell",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -34,7 +36,8 @@
     "next": "latest",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
@@ -64,5 +67,6 @@
   },
   "engines": {
     "node": "8"
-  }
+  },
+  "snyk": true
 }
