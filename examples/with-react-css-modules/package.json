@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Samciu",
   "license": "ISC",
@@ -15,6 +17,8 @@
     "babel-plugin-react-css-modules": "^5.2.4",
     "next": "latest",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  }
+    "react-dom": "^16.8.6",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
