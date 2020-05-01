@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "mobx": "^5.9.0",
@@ -13,11 +15,13 @@
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-decorators": "^7.3.0",
     "@types/react": "^16.4.12"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "snyk": true
 }
