@@ -45,9 +45,10 @@
   "scripts": {
     "build": "taskr",
     "release": "taskr release",
-    "prepublish": "npm run release && yarn types",
+    "prepublish": "npm run snyk-protect && npm run release && yarn types",
     "types": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
-    "typescript": "tsc --noEmit --declaration"
+    "typescript": "tsc --noEmit --declaration",
+    "snyk-protect": "snyk protect"
   },
   "taskr": {
     "requires": [
@@ -127,7 +128,8 @@
     "webpack": "4.39.0",
     "webpack-dev-middleware": "3.7.0",
     "webpack-hot-middleware": "2.25.0",
-    "webpack-sources": "1.4.3"
+    "webpack-sources": "1.4.3",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": "^16.6.0",
@@ -180,5 +182,6 @@
   },
   "engines": {
     "node": ">= 8.0.0"
-  }
+  },
+  "snyk": true
 }
