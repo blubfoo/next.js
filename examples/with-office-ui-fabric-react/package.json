@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "next": "latest",
-    "office-ui-fabric-react": "^6.154.0",
+    "office-ui-fabric-react": "^7.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
