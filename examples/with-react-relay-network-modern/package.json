@@ -16,7 +16,7 @@
     "dotenv": "^8.0.0",
     "dotenv-webpack": "^1.5.4",
     "graphql": "^14.3.0",
-    "isomorphic-fetch": "^2.2.1",
+    "isomorphic-fetch": "^3.0.0",
     "next": "latest",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
