@@ -80,7 +80,7 @@
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "chalk": "2.4.2",
     "ci-info": "2.0.0",
-    "compression": "1.7.4",
+    "compression": "1.8.1",
     "conf": "5.0.0",
     "content-type": "1.0.4",
     "cookie": "0.4.0",
